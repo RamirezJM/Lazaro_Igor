@@ -6,7 +6,7 @@
 }
 
 header{
-  background: #8c593b;
+  background: #d9c5b4;
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@ header>img{
 }
 
 nav{
-  background-color: #8c593b;
+  background-color: #d9c5b4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +102,7 @@ nav{
   }
   .list-links{
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
   }
   .list-links>li>img{
     display: none;
