@@ -89,35 +89,59 @@ nav{
 }
  */
 
+ h1{
+  font-size: 2em;
+  text-align: center;
+  /* margin-block: 1em; */
+}
+
  .hero{
-  background-image: url('../images/hero2.jpg');
+  background-image: url('../images/hero3.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
+  padding-top: 3em;
  }
 
  .hero-title{
   font-size: 3rem;
-  font-weight: 500;
-  margin-block: .5em;
+  font-weight: 400;
+  margin-top: 3em;
+  
   text-shadow: 2px 2px 2px white, 2px 2px 2px #addec2;
+  text-transform: uppercase;
  }
  .hero-subtitle{
   font-size: 1.5rem;
   font-weight: 500;
   text-shadow: 2px 2px 2px white, 2px 2px 2px #addec2;
+  margin-block: .5em;
  }
 
-
-
-h1{
-  font-size: 2em;
-  text-align: center;
-  margin-block: 1em;
+ .intro{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  width: 90%;
+  margin: 1em auto;
+ }
+.intro-section{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: .5em;
 }
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.intro-section>img{
+  width: 30%;
+  border-radius: 50%;
+}
+
 
 /* sobre mi */
 
@@ -174,16 +198,20 @@ h1{
 
 @media (min-width:700px){
   .hero{
-    padding: 4em;
+    padding-top: 5em;
   }
   .hero-title{
-    font-size:4rem ;
+    font-size: 4rem;
   }
+
   .sobre-mi{
     flex-direction: row-reverse;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .main-img{
     width: 50%;
+    max-height: 500px;
   }
 }
 
