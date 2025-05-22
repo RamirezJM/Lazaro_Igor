@@ -5,6 +5,22 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Montserrat-semibold.woff2') format('woff2');
+}
+@font-face{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Manrope-medium.woff2') format('woff2');
+}
 header{
   background: #d9c5b4;
   padding: 1em;
@@ -51,8 +67,7 @@ nav{
   text-decoration: none;
   color: #0d0d0d;
   font-size: 1.2rem;
-  font-weight: 700;
-  font-style: italic;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   /* text-shadow: 1px 1px 1px #3EC2CC; */
 }
 
@@ -90,11 +105,17 @@ nav{
  */
 
  h1{
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
   /* margin-block: 1em; */
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-
+h2, a{
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+p{
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
+}
  .hero{
   background-image: url('../images/hero3.jpg');
   background-size: cover;
@@ -103,11 +124,13 @@ nav{
   flex-direction: column;
   align-items: center;
   padding-top: 3em;
+ 
+  
  }
 
  .hero-title{
   font-size: 3rem;
-  font-weight: 400;
+ 
   margin-top: 3em;
   
   text-shadow: 2px 2px 2px white, 2px 2px 2px #addec2;
@@ -115,7 +138,7 @@ nav{
  }
  .hero-subtitle{
   font-size: 1.5rem;
-  font-weight: 500;
+  
   text-shadow: 2px 2px 2px white, 2px 2px 2px #addec2;
   margin-block: .5em;
  }
@@ -132,8 +155,8 @@ nav{
  flex-direction: column;
  align-items: center;
  gap: .5em;
- border: solid 2px #d9c5b4;
- border-radius: 5px;
+/*  border: solid 2px #d9c5b4;
+ border-radius: 5px; */
  padding: 1em;
 }
 h2{
@@ -142,7 +165,29 @@ h2{
 }
 .intro-section>img{
   width: 30%;
-  border-radius: 50%;
+ /*  border-radius: 50%; */
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.whatsapp{
+  fill: #25D366;
+  width: 2rem;
+  
+ }
+ .instagram{
+  fill: #C13584;
+  width: 2rem;
+ }
+.copyright{
+  text-align: center;
+  font-size: .8rem;
+  border-top: solid 1px #d9c5b4;
+  padding: .5em;
 }
 
 
@@ -215,6 +260,16 @@ h2{
   .main-img{
     width: 50%;
     max-height: 500px;
+  }
+  .intro-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .intro-section>h2{
+    flex-basis: 100%;
+  }
+  .intro-section>p{
+    flex-basis: 60%;
   }
 }
 
