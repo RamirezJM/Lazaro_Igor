@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -14,7 +14,7 @@
   src: url('../fonts/Montserrat-semibold.woff2') format('woff2');
 }
 @font-face{
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope";
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -115,6 +115,7 @@ h2, a{
 }
 p{
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
  .hero{
   background-image: url('../images/hero3.jpg');
@@ -149,6 +150,7 @@ p{
   gap: 2em;
   width: 90%;
   margin: 1em auto;
+  max-width: 1000px;
  }
 .intro-section{
  display: flex;
@@ -165,7 +167,14 @@ h2{
 }
 .intro-section>img{
   width: 30%;
+  order: -1;
  /*  border-radius: 50%; */
+}
+.intro-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 
 .contacto{
@@ -263,15 +272,12 @@ h2{
   }
   .intro-section{
     flex-direction: row;
-    flex-wrap: wrap;
+    gap:1em;   
+    
   }
-  .intro-section>h2{
-    flex-basis: 100%;
+  
+  
   }
-  .intro-section>p{
-    flex-basis: 60%;
-  }
-}
 
 @media (min-width:1000px){
   .btn-menu{
