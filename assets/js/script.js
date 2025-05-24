@@ -6,3 +6,11 @@ menuButton.addEventListener("click", () =>{
   menuButton.classList.toggle('menu-abierto')
   menuButton.setAttribute('aria-expanded', navMenu.classList.contains('active-link'))
 })
+
+baguetteBox.run('.procesos-galeria', {
+    buttons: true
+  })
+
+baguetteBox.run('.proyectos-galeria', {
+    buttons: true
+  })
