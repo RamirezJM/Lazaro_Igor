@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   
-  
 }
 
 @font-face {
@@ -124,43 +123,26 @@ p{
   line-height: 1.5;
 }
  .hero{
-  background-image: url('../images/morilla.jpeg');
+  background-image: url('../images/hero.jpeg');
   background-size: cover;
   background-position: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  padding: 3em 1em; 
-  
   height: 50vh;
  }
 
-/*  .title{
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
- } */
+
  .hero-title{
   font-size: 2rem;
-  grid-column: 1 / 2 ; 
   text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 2px 2px 2px #0d0d0d; 
+  color: #0d0d0d;
+  text-align: center; 
+  margin-top: 1em;
    
  }
 
  .hero-subtitle{
   font-size: 1.3rem;
- grid-column: 1 / 2; 
- color: #ffffff;
-  text-shadow: 2px 2px 2px #0d0d0d; 
-
- 
-  
+  color: #0d0d0d;
+  text-align: center;
  }
 
  
@@ -220,6 +202,7 @@ p{
 }
 .intro-text>h2>a{
   color: #3a5a40;
+  font-size: 1.1rem;
 }
 
 .intro-section a:focus, .intro-section a:hover{
