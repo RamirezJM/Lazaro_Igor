@@ -217,6 +217,7 @@ p{
   gap: 1em;
   background-color: #d9ab82;
   padding-block: 1em;
+ 
 }
 .contacto>h2{
  flex-basis: 100%;
@@ -249,7 +250,9 @@ p{
   padding: 1em;
 }
 .main-img{
-  width: 80%;
+  width: 80%; 
+ max-width: 100%;
+  
 }
 .sobre-mi>p{
   line-height: 1.5;
@@ -353,9 +356,12 @@ p{
   order:-2;
  }
   .main-img{
-    width: 50%;
+     width: auto;
+    flex: 0 0 50%;
     max-height: 500px;
+  
   }
+
   .intro-section{
     flex-direction: row;
     gap:1em;   
@@ -414,7 +420,26 @@ p{
     height: 70vh;
   }
 
-  /* .hero{
-    padding: 6rem;
-  } */
+}
+
+@supports (-moz-appearance: none) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      
+    }
+
+    main { 
+        flex-grow: 1; 
+    }
+
+   
+    footer {
+        margin-top: 0;
+    }
 }
