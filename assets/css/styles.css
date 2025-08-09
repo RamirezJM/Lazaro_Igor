@@ -23,6 +23,7 @@
 }
 body{
    background-color: #d9c5b4;
+   color: #121212;
 }
 header{
   background: #d9ab82;
@@ -45,7 +46,7 @@ nav{
   top: 0;
   left: 0;
   width: 60%;
-  height: 80%;
+  height: 90%;
   transform: translateX(-100%);
   transition: transform 500ms ease-in-out;
  
@@ -86,9 +87,9 @@ nav{
 
 .btn-menu{
   width: 3em;
-  fill: #0d0d0d;
+  fill: #121212;
   background-color: transparent;
-  border: #0d0d0d solid 2px;
+  border: #121212 solid 2px;
   border-radius: 5px;
   padding: .5em;
   margin-left: auto;
@@ -107,7 +108,9 @@ nav{
 .menu-abierto .close-menu{
   display: block;
 }
-
+h1, h2, h3{
+  color: #121212;
+}
 
  h1{
   font-size: 2rem;
@@ -159,15 +162,16 @@ p{
  display: flex;
  flex-direction: column;
  align-items: center;
- gap: .5em;
-
+ gap: .5em; 
+ border: solid 2px #443222;
+ border-radius: 5px;
  padding: 1em;
 }
 
 .intro-section>img{
   width: 30%;
   order: -1;
- /*  border-radius: 50%; */
+  border-radius: 5px 
 }
 .productos-intro{
   display: flex;
@@ -177,6 +181,7 @@ p{
 }
 .productos-intro>img{
   width: 30%;
+  border-radius: 5px 
 }
 .proyectos-intro{
   display: flex;
@@ -187,6 +192,7 @@ p{
 }
 .proyectos-intro>img{
   width: 30%;
+  border-radius: 5px 
 }
 
 .intro-text{
@@ -201,8 +207,9 @@ p{
   
 }
 .intro-text>h2>a{
-  color: #3a5a40;
+  color: #283c2c;
   font-size: 1.1rem;
+  text-underline-offset: .2em;
 }
 
 .intro-section a:focus, .intro-section a:hover{
@@ -223,22 +230,38 @@ p{
  flex-basis: 100%;
  text-align: center;
 }
-.whatsapp{
+/* .whatsapp{
   fill: #25D366;
   width: 2rem;
+  background-color: #121212;
+  border-radius: 50%;
+  padding: .2em;
   
  }
  .instagram{
   fill: #C13584;
   width: 2rem;
+  background-color: #121212;
+  border-radius: 50%;
+  padding: .2em;
+ } */
+.whatsapp, .instagram{
+  fill: #443222;
+  width: 2rem;
+  
+  
  }
+
 .copyright{
   text-align: center;
   font-size: .8rem;
   border-top: solid 1px #0d0d0d;
   padding: .5em;
 }
-
+.copyright a{
+  color: #283c2c;
+  text-underline-offset: .2em;
+}
 
 /* sobre mi */
 
