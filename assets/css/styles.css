@@ -355,6 +355,25 @@ p{
   object-fit: cover;
 }
 
+.instagram-widget{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+
+}
+
+.instagram-widget h2{
+  text-align: center;
+  margin-block: 1em;
+
+}
+
+.instagram-widget .lightwidget-widget{
+  margin: 0 auto;
+
+}
+
 @media (min-width:700px){
   /* .hero{
     padding-top: 5em;
