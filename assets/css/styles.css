@@ -355,11 +355,15 @@ p{
   object-fit: cover;
 }
 
+
+/* instagram*/
 .instagram-widget{
   width: 90%;
   margin: 0 auto;
   padding: 1em;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
 
 }
 
@@ -367,6 +371,11 @@ p{
   text-align: center;
   margin-block: 1em;
 
+}
+.instagram-widget div{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .instagram-widget .lightwidget-widget{
