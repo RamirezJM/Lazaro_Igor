@@ -1,9 +1,15 @@
+/*========  RESET  =========*/
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
 }
+
+*, ::after, ::before{
+box-sizing: border-box;
+}
+
+/*========  GENERAL  =========*/
 
 @font-face {
   font-family: "Montserrat";
@@ -21,24 +27,36 @@
   font-display: swap;
   src: url('../fonts/Manrope-medium.woff2') format('woff2');
 }
+
+:root{
+  --font-body: 'Manrope', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --color: #121212;
+  --bg1: #d9c5b4;
+  --bg2: #d9ab82 ;
+
+
+}
+
 body{
-   background-color: #d9c5b4;
-   color: #121212;
+   background-color: var(--bg1);
+   color: var(--color);
+   line-height: 1.5;
 }
 header{
-  background: #d9ab82;
+  background: var(--bg2);
   padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   
 }
-header>img{
+.logo{
   width: 100px;
 }
 
 nav{
-  background-color: #d9ab82;
+  background-color: var(--bg2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,16 +133,13 @@ h1, h2, h3{
  h1{
   font-size: 2rem;
   text-align: center;
-  /* margin-block: 1em; */
-   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+ 
+   font-family: var(--font-heading);
 }
 h2, a{
-   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   font-family: var(--font-heading);
 }
-p{
-  font-family: 'Manrope', Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-}
+
  .hero{
   background-image: url('../images/hero.jpeg');
   background-size: cover;
@@ -230,21 +245,7 @@ p{
  flex-basis: 100%;
  text-align: center;
 }
-/* .whatsapp{
-  fill: #25D366;
-  width: 2rem;
-  background-color: #121212;
-  border-radius: 50%;
-  padding: .2em;
-  
- }
- .instagram{
-  fill: #C13584;
-  width: 2rem;
-  background-color: #121212;
-  border-radius: 50%;
-  padding: .2em;
- } */
+
 .whatsapp, .instagram{
   fill: #443222;
   width: 2rem;
