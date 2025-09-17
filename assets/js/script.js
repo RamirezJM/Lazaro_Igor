@@ -16,14 +16,7 @@ navLinks.forEach(link => {
   })
 })
 
-/* baguetteBox.run('.procesos-galeria', {
-    buttons: true
-  })
 
-baguetteBox.run('.proyectos-galeria', {
-    buttons: true
-  })
- */
 if (typeof baguetteBox !== 'undefined') {
   baguetteBox.run('.proyectos-galeria', {
     buttons: true

@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta property="og:title" content="Lázaro Igor">
-  <meta property="og:description" content="Artesanía en madera desde Tortel. Objetos únicos nacidos de la madera que el mar y el bosque patágonico regalan. Diseño e historia en cada pieza."> 
+  <meta property="og:title" content="Lázaro Igor">
+  <meta property="og:description"
+    content="Artesanía en madera desde Tortel. Objetos únicos nacidos de la madera que el mar y el bosque patágonico regalan. Diseño e historia en cada pieza.">
   <meta property="og:image" content="https://lazaroigortortel.cl/assets/images/hero.jpeg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lazaroigortortel.cl">
@@ -19,15 +20,13 @@
 
 <body>
   <header>
-    <img src="assets/images/logo-lazaro.png" alt="logo Kar Patagonia" class="logo">
-    <button class="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" class="open-menu" viewBox="0 0 448 512">
-        <path
-          d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" class="close-menu" viewBox="0 0 384 512">
-        <path
-          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
-      </svg>
+    <a href="/">
+      <img src="assets/images/logo-lazaro.png" alt="logo Kar Patagonia" class="logo">
+    </a>
+    
+    <button class="btn-menu">
+      <img src="assets/images/menu.svg" alt="icono menu hamburguesa" class="open-menu">
+      <img src="assets/images/close.svg" alt="icono X" class="close-menu">
     </button>
     <nav>
       <ul class="list-links">
@@ -62,10 +61,12 @@
         nativa.</p>
     </div>
   </main>
+  <footer>
     <section class="copyright">
       <p>Kar Patagonia &copy;2025. Todos los derechos reservados</p>
       <p>Desarrollo Web: <a href="https://jmramirez.dev" target="_blank">JMRamirez</a></p>
     </section>
+  </footer>
   <script src="assets/js/script.js"></script>
 </body>
 
