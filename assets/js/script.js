@@ -15,6 +15,11 @@ navLinks.forEach(link => {
     menuButton.setAttribute('aria-expanded', 'false')
   })
 })
+if (typeof baguetteBox !== 'undefined') {
+  baguetteBox.run('.productos', {
+    buttons: true
+  });
+}
 
 
 if (typeof baguetteBox !== 'undefined') {
