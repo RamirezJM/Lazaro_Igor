@@ -111,7 +111,7 @@ nav{
   top: 0;
   left: 0;
   width: 60%;
-  height: 90%;
+  height: 100%;
   transform: translateX(-100%);
   transition: transform 500ms ease-in-out;
  
@@ -425,10 +425,7 @@ div.sobre-mi{
 }
 
 @media (min-width:700px){
-  /* .hero{
-    padding-top: 5em;
-  } */
-
+ 
   .hero{
     height: 60vh;
   }
@@ -439,11 +436,6 @@ div.sobre-mi{
     font-size: 1.5rem;
   }
 
-/*   div.sobre-mi{
-    flex-direction: row-reverse;
-    max-width: 800px;
-    margin: 0 auto;
-  } */
  .intro-sobre-mi{
   order:-2;
  }
